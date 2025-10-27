@@ -35,50 +35,11 @@ export const ContactUs = () => {
 
         {/* Contact Cards */}
         <Row className="g-4 sec_sp">
-          {/* LEFT CARD */}
-<Col lg="6" className="d-flex">
   <div className="contact-card contact-card--glow w-100">
-    <div className="card-header-lite">
-      <span className="dot dot-gray" />
+          <span className="dot dot-gray" />
       <span className="dot dot-red" />
-    </div>
-
-    <h3 className="color_sec mb-2">Get in touch</h3>
+     <h3 className="color_sec mb-2">Get in touch</h3>
     <p className="muted mb-4">Let’s build something elegant and effective.</p>
-
-    <address className="contact-address">
-      <p className="mb-2">
-        <strong>Email:</strong>{" "}
-        <a href={`mailto:${contactConfig.YOUR_EMAIL}`}>
-          {contactConfig.YOUR_EMAIL}
-        </a>
-      </p>
-      {contactConfig?.YOUR_FONE && (
-        <p className="mb-3">
-          <strong>Phone:</strong> {contactConfig.YOUR_FONE}
-        </p>
-      )}
-    </address>
-
-    {contactConfig?.LINKEDIN && (
-      <a
-        className="btn btn-linkedin btn-shine"
-        href={contactConfig.LINKEDIN}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <span className="lnk-icon" aria-hidden>in</span>
-        Connect on LinkedIn
-      </a>
-    )}
-  </div>
-</Col>
-
-{/* RIGHT CARD */}
-<Col lg="6" className="d-flex">
-  <div className="contact-card contact-card--glow w-100">
-    <h3 className="color_sec mb-2">About Me</h3>
-    <p className="muted mb-4">Creative design • Marketing • AI-assisted visuals</p>
 
     <p className="mb-3">
       I’m a creative designer and marketing specialist experienced in Canva, Photoshop,
@@ -118,8 +79,19 @@ export const ContactUs = () => {
     <p className="mt-4 mb-0">
       I’m open to collaboration and exciting new projects—let’s create something that inspires and sells!
     </p>
+
+     {contactConfig?.LINKEDIN && (
+      <a
+        className="btn btn-linkedin btn-shine"
+        href={contactConfig.LINKEDIN}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span className="lnk-icon" aria-hidden>in</span>
+        Connect on LinkedIn
+      </a>
+    )}
   </div>
-</Col>
 
         </Row>
 

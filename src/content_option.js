@@ -167,7 +167,6 @@ const dataportfolio = [
 
 const contactConfig = {
   YOUR_EMAIL: "gabrieliansyuzanna@gmail.com",
-  YOUR_FONE: "+374 96 900 448",
   LINKEDIN: "https://www.linkedin.com/in/gabrieliansyuzanna/"
 };
 
